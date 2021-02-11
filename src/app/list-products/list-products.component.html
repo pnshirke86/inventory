@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Sr. No.</th>
+        <th scope="col">Product name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="cursor: pointer;"  *ngFor="let item of products">
+        <th scope="row">{{item.id}}</th>
+        <td (click)="viewData(item.id)">{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td (click)="deleteProduct(item.id)"><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+    </tbody>
+  </table>
