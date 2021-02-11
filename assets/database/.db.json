@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "product_name": "asdasd",
+      "description": "asdasd",
+      "price": 0,
+      "id": 4
+    },
+    {
+      "product_name": "asdsa",
+      "description": "asds",
+      "price": 0,
+      "id": 6
+    },
+    {
+      "product_name": "nirma",
+      "description": "nirma is used for cloting",
+      "price": "100",
+      "id": 7
+    },
+    {
+      "product_name": "",
+      "description": "",
+      "price": 0,
+      "id": 8
+    },
+    {
+      "product_name": "buscuit",
+      "description": "asdasdasdasdasdasdasdasdsadasdasdasdasdasd",
+      "price": "100",
+      "id": 9
+    }
+  ]
+}
