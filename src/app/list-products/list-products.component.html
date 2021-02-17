@@ -4,15 +4,19 @@
         <th scope="col">Sr. No.</th>
         <th scope="col">Product name</th>
         <th scope="col">Price</th>
+        <th scope="col">Edit</th>
         <th scope="col">Delete</th>
       </tr>
     </thead>
     <tbody>
       <tr style="cursor: pointer;"  *ngFor="let item of products">
-        <th scope="row">{{item.id}}</th>
+        <td scope="row">{{item.id}}</td>
         <td (click)="viewData(item.id)">{{item.name}}</td>
         <td>{{item.price}}</td>
+        <td (click)="editData(item.id)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
         <td (click)="deleteProduct(item.id)"><i class="fa fa-trash" aria-hidden="true"></i></td>
       </tr>
     </tbody>
   </table>
+
+

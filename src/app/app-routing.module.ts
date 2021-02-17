@@ -6,6 +6,11 @@ import { ViewProductComponent } from './view-product/view-product.component';
 
 const routes: Routes = [
   {
+    path:'',
+    redirectTo :"list",
+    pathMatch: 'full'
+  },
+  {
     component : ListProductsComponent,
     path : "list"
   },
@@ -16,6 +21,10 @@ const routes: Routes = [
   {
     component : AddProductsComponent,
     path : "add"
+  },
+  {
+    component : AddProductsComponent,
+    path : "edit/:id"
   }
 ];
 

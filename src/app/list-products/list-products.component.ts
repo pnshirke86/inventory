@@ -10,7 +10,7 @@ import { ProductService } from '../services/product.service';
 })
 export class ListProductsComponent implements OnInit {
 
-  url = "https://6023f66b6bf3e6001766bb87.mockapi.io/inventory/api/get-products"
+  url = "https://602b9536ef26b40017f146e9.mockapi.io/inventory/api/get-products"
   products;
 
   constructor(public api : ProductService, private route : Router,private toastr: ToastrService) { }
@@ -40,6 +40,10 @@ export class ListProductsComponent implements OnInit {
 
   viewData(value){
       this.route.navigate([`/view/${value}`])
+  }
+
+  editData(id){
+    this.route.navigate([`/edit/${id}`])
   }
 
 }

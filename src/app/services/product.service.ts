@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http'
 })
 export class ProductService {
 
-  url = "https://6023f66b6bf3e6001766bb87.mockapi.io/inventory/api/get-products"
+  url = "https://602b9536ef26b40017f146e9.mockapi.io/inventory/api/get-products"
 
   constructor(public http : HttpClient) { }
 
@@ -15,6 +15,9 @@ export class ProductService {
   }
   postData(url ,data){
     return this.http.post(url ,data)
+  }
+  putData(url ,data){
+    return this.http.put(url ,data)
   }
 
   deleteData(item){
