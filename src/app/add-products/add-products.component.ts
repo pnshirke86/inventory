@@ -57,7 +57,7 @@ export class AddProductsComponent implements OnInit {
       let url = this.url+"/"+this.id
       this.api.putData(url, value).subscribe(res=>{
         this.form.reset()
-        this.showSuccess()
+        this.showUpdateSuccess()
         this.route.navigate(["/list"])
       })
     }else{
@@ -72,6 +72,9 @@ export class AddProductsComponent implements OnInit {
 
   showSuccess() {
     this.toastr.success('Product Added Successfully !');
+  }
+  showUpdateSuccess(){
+    this.toastr.success('Product Updated Successfully !');
   }
 
 
